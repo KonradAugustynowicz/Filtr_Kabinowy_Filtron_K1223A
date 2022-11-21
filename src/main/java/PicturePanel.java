@@ -18,7 +18,7 @@ public class PicturePanel extends JPanel {
 
     public PicturePanel() throws IOException {
         setSize(1000, 1000);
-        image = ImageIO.read((getClass().getResource("/apple_noise.png")));
+        image = ImageIO.read((getClass().getResource("apple_noise.png")));
         JLabel label = new JLabel("", new ImageIcon(image), 0);
         pixels = new int[image.getHeight()][image.getWidth()][3];
     }
@@ -536,7 +536,7 @@ public class PicturePanel extends JPanel {
     }
 
     public void reset() throws IOException {
-        image = ImageIO.read((getClass().getResource("/apple_noise.png")));
+        image = ImageIO.read((getClass().getResource("problem.jpg")));
         paintComponent(getGraphics());
     }
 
